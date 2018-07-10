@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController">
+            <connections>
+                <outlet property="versionLabel" destination="l5W-gV-rWn" id="2f4-zM-kxI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_icon_lezlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1t-nC-dal">
+                    <rect key="frame" x="151" y="168" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="LaO-Tb-Ycn"/>
+                        <constraint firstAttribute="height" constant="72" id="X5c-7b-WU3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乐易住 V2.1.0.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5W-gV-rWn">
+                    <rect key="frame" x="87" y="252" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6YC-EN-dPu"/>
+                        <constraint firstAttribute="width" constant="200" id="NBe-vb-EhE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright@2016-2017 Smartlyz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="De6-Qp-rqI">
+                    <rect key="frame" x="47" y="545" width="281" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CYh-S9-MVI"/>
+                        <constraint firstAttribute="width" constant="281" id="ai7-kg-Ob8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szd-Dj-ayi">
+                    <rect key="frame" x="47" y="565" width="281" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="281" id="OCV-Zd-AVo"/>
+                        <constraint firstAttribute="height" constant="21" id="WdW-BP-UMi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wn0-9k-AkL">
+                    <rect key="frame" x="47" y="525" width="281" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BeV-UX-uZu"/>
+                        <constraint firstAttribute="width" constant="281" id="C1f-EM-xIa"/>
+                    </constraints>
+                    <string key="text">乐易住智能科技股份有限公司版权所有
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Szd-Dj-ayi" firstAttribute="top" secondItem="wn0-9k-AkL" secondAttribute="bottom" constant="19" id="4g1-QP-Qzj"/>
+                <constraint firstItem="De6-Qp-rqI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DbU-zv-Zvj"/>
+                <constraint firstItem="l5W-gV-rWn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G2H-9b-c7w"/>
+                <constraint firstItem="Szd-Dj-ayi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gwl-Vr-T0r"/>
+                <constraint firstItem="De6-Qp-rqI" firstAttribute="top" secondItem="l5W-gV-rWn" secondAttribute="bottom" constant="272" id="Juk-CX-iSq"/>
+                <constraint firstItem="wn0-9k-AkL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ocg-Xr-maV"/>
+                <constraint firstItem="K1t-nC-dal" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qm3-ge-SdS"/>
+                <constraint firstItem="wn0-9k-AkL" firstAttribute="top" secondItem="l5W-gV-rWn" secondAttribute="bottom" constant="252" id="SSJ-hh-JQI"/>
+                <constraint firstItem="K1t-nC-dal" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="168" id="cbo-8o-Iku"/>
+                <constraint firstItem="l5W-gV-rWn" firstAttribute="top" secondItem="K1t-nC-dal" secondAttribute="bottom" constant="12" id="pBf-Eo-hLJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="120" y="-123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about_icon_lezlogo.png" width="72" height="72"/>
+    </resources>
+</document>

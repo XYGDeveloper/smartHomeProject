@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LYZPayScuessViewController">
+            <connections>
+                <outlet property="ArriveHotel" destination="dzW-8O-2JH" id="OE3-Ze-wRE"/>
+                <outlet property="HotelAddress" destination="N6y-hW-6pW" id="J7M-3l-p5A"/>
+                <outlet property="NoticeContent" destination="zBt-9V-FFG" id="Lg0-K3-ezx"/>
+                <outlet property="ScanOrder" destination="zUf-XY-pNA" id="DOF-vh-b4S"/>
+                <outlet property="hotelName" destination="DfX-6C-FKf" id="0Fa-d4-9Zx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-02-mWh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="351"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Order_payScuess_finish" translatesAutoresizingMaskIntoConstraints="NO" id="YJB-D4-Efj">
+                            <rect key="frame" x="140" y="60" width="95" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="95" id="4Y4-hX-Tqg"/>
+                                <constraint firstAttribute="height" constant="96" id="MBL-pK-UCR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6y-hW-6pW">
+                            <rect key="frame" x="13" y="249" width="350" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="BAv-gh-9VR"/>
+                                <constraint firstAttribute="width" constant="350" id="iQw-uo-QCU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.49753269010649948" green="0.50245875634517767" blue="0.50245875634517767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUf-XY-pNA">
+                            <rect key="frame" x="30" y="289" width="140" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="KZE-tV-idi"/>
+                                <constraint firstAttribute="height" constant="40" id="RFV-wC-jdy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="查看详情">
+                                <color key="titleColor" red="0.44799539819100231" green="0.4524309961928934" blue="0.4524309961928934" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="scanOrderAction:" destination="-1" eventType="touchUpInside" id="0eC-bh-la0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzW-8O-2JH">
+                            <rect key="frame" x="205" y="289" width="140" height="40"/>
+                            <color key="backgroundColor" red="0.65646243095397949" green="0.55266141891479492" blue="0.42665243148803711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ljS-6T-rjl"/>
+                                <constraint firstAttribute="width" constant="140" id="vqp-j2-Yfc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="前往酒店">
+                                <color key="titleColor" red="0.98136065181148602" green="0.99107709390862941" blue="0.99107709390862941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ToArriveHotelAction:" destination="-1" eventType="touchUpInside" id="ySB-Fb-NcH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJg-q7-IzK">
+                            <rect key="frame" x="141" y="172" width="94" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="93.5" id="7nX-e8-XRN"/>
+                                <constraint firstAttribute="height" constant="23" id="j5Q-N1-gxN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfX-6C-FKf">
+                            <rect key="frame" x="88" y="220" width="200" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Yah-R0-TtE"/>
+                                <constraint firstAttribute="width" constant="200" id="jpv-sV-G37"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="N6y-hW-6pW" firstAttribute="top" secondItem="DfX-6C-FKf" secondAttribute="bottom" constant="9" id="3OE-r0-ovm"/>
+                        <constraint firstItem="YJB-D4-Efj" firstAttribute="centerX" secondItem="tGX-02-mWh" secondAttribute="centerX" id="3Pc-at-7fz"/>
+                        <constraint firstItem="OJg-q7-IzK" firstAttribute="centerX" secondItem="tGX-02-mWh" secondAttribute="centerX" id="509-lc-vtJ"/>
+                        <constraint firstItem="zUf-XY-pNA" firstAttribute="leading" secondItem="tGX-02-mWh" secondAttribute="leading" constant="30" id="8da-dp-vnz"/>
+                        <constraint firstItem="dzW-8O-2JH" firstAttribute="top" secondItem="N6y-hW-6pW" secondAttribute="bottom" constant="20" id="96T-x2-kDt"/>
+                        <constraint firstItem="OJg-q7-IzK" firstAttribute="top" secondItem="YJB-D4-Efj" secondAttribute="bottom" constant="16" id="QJg-EG-hS3"/>
+                        <constraint firstItem="zUf-XY-pNA" firstAttribute="top" secondItem="N6y-hW-6pW" secondAttribute="bottom" constant="20" id="Tdt-TV-Bd8"/>
+                        <constraint firstItem="N6y-hW-6pW" firstAttribute="centerX" secondItem="tGX-02-mWh" secondAttribute="centerX" id="WQ3-Mp-udo"/>
+                        <constraint firstItem="DfX-6C-FKf" firstAttribute="top" secondItem="OJg-q7-IzK" secondAttribute="bottom" constant="25" id="XqO-7r-jyh"/>
+                        <constraint firstItem="DfX-6C-FKf" firstAttribute="centerX" secondItem="tGX-02-mWh" secondAttribute="centerX" id="g1r-NB-Oda"/>
+                        <constraint firstItem="YJB-D4-Efj" firstAttribute="top" secondItem="tGX-02-mWh" secondAttribute="top" constant="60" id="gKe-2z-3m9"/>
+                        <constraint firstAttribute="height" constant="351" id="iia-vW-62q"/>
+                        <constraint firstAttribute="trailing" secondItem="dzW-8O-2JH" secondAttribute="trailing" constant="30" id="xkv-7e-5Y0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rT-Oe-w8f">
+                    <rect key="frame" x="0.0" y="351" width="375" height="286"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="如何入住" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf6-Dc-Ool">
+                            <rect key="frame" x="40" y="25" width="93" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.   前往酒店，并找到自助入住登记机" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mT-JJ-o8l">
+                            <rect key="frame" x="40" y="59" width="313" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.45094853639602661" green="0.45100396871566772" blue="0.45092374086380005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.   在自助机登记证件，并进行脸部识别" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpn-mX-6FN">
+                            <rect key="frame" x="40" y="85" width="313" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.42362925500149295" green="0.42782360406091369" blue="0.42782360406091369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.   收取入住短信通知(含房间号和密码)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgo-n0-LtS">
+                            <rect key="frame" x="40" y="111" width="313" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.38063017878471189" green="0.38439879441624369" blue="0.38439879441624369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* 房门还可通过网络开锁功能开启" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVL-9T-YGz">
+                            <rect key="frame" x="40" y="137" width="313" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.34868520298347772" green="0.35213753172588835" blue="0.35213753172588835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97248440980911255" green="0.97259706258773804" blue="0.97243398427963257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zY4-bP-qXc">
+                    <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Order_payScuess_Notice" translatesAutoresizingMaskIntoConstraints="NO" id="rPq-y6-rSJ">
+                            <rect key="frame" x="43" y="8" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="GgB-KO-HP7"/>
+                                <constraint firstAttribute="height" constant="15" id="XRS-IK-rJn"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBt-9V-FFG">
+                            <rect key="frame" x="65.5" y="5" width="245.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="1dn-iq-1Oo"/>
+                                <constraint firstAttribute="width" constant="245.5" id="To5-c0-Orm"/>
+                            </constraints>
+                            <string key="text">根据公安部法律规定，住宿需登记身份证信息
+</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.44989992348462232" green="0.45435437817258884" blue="0.45435437817258884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zBt-9V-FFG" firstAttribute="top" secondItem="zY4-bP-qXc" secondAttribute="top" constant="5" id="3MA-yZ-0cA"/>
+                        <constraint firstAttribute="height" constant="30" id="60n-Pn-h57"/>
+                        <constraint firstItem="zBt-9V-FFG" firstAttribute="centerX" secondItem="zY4-bP-qXc" secondAttribute="centerX" id="8Ax-eq-e3k"/>
+                        <constraint firstItem="zBt-9V-FFG" firstAttribute="leading" secondItem="rPq-y6-rSJ" secondAttribute="trailing" constant="7.5" id="AuE-wh-unc"/>
+                        <constraint firstItem="rPq-y6-rSJ" firstAttribute="top" secondItem="zY4-bP-qXc" secondAttribute="top" constant="8" id="Nt4-aK-0fd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1rT-Oe-w8f" firstAttribute="top" secondItem="tGX-02-mWh" secondAttribute="bottom" id="0qe-Z4-Pwf"/>
+                <constraint firstItem="1rT-Oe-w8f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6yb-M2-ql1"/>
+                <constraint firstAttribute="trailing" secondItem="zY4-bP-qXc" secondAttribute="trailing" id="U9O-G8-YeO"/>
+                <constraint firstItem="zY4-bP-qXc" firstAttribute="top" secondItem="1rT-Oe-w8f" secondAttribute="bottom" id="bD0-yf-Opm"/>
+                <constraint firstItem="zY4-bP-qXc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eLr-CK-sIO"/>
+                <constraint firstItem="tGX-02-mWh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lsx-MU-SQP"/>
+                <constraint firstAttribute="trailing" secondItem="1rT-Oe-w8f" secondAttribute="trailing" id="nrS-I1-xDd"/>
+                <constraint firstAttribute="bottom" secondItem="zY4-bP-qXc" secondAttribute="bottom" id="rPe-Xj-2Jg"/>
+                <constraint firstItem="tGX-02-mWh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tXd-l9-hrr"/>
+                <constraint firstAttribute="trailing" secondItem="tGX-02-mWh" secondAttribute="trailing" id="uqQ-hz-6pH"/>
+            </constraints>
+            <point key="canvasLocation" x="418" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Order_payScuess_Notice" width="15" height="15"/>
+        <image name="Order_payScuess_finish" width="95" height="96"/>
+    </resources>
+</document>
